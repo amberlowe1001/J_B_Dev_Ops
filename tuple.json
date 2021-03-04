@@ -1,6 +1,7 @@
 {
   "additionalItems": {
     "type": "string"
+
   },
   "items": [
     {
@@ -31,10 +32,43 @@
         "Last name"
       ],
       "item": [],
+=======
+  } ,
+  "items": [
+    {
+      "type": "\"\"String\"\"" ,
+      "enum": [
+        "Name" ,
+        "Author" ,
+        "surname"
+      ]
+    } ,
+    {
+      "type": "string" ,
+      "item": [
+        ""
+      ]
+    } ,
+    {
+      "type": "string" ,
+      "enum": [
+        "Title" ,
+        "Publisher" ,
+        "Year"
+      ]
+    } ,
+    {
+      "enum": [
+        "Name" ,
+        "Last name"
+      ] ,
+      "item": [ ] ,
+
       "type": "string"
     }
   ]
 }
+
 
      }
     "type": "array",
@@ -89,3 +123,36 @@
   "type": "array",
   "uniqueItems": true
 }
+=======
+{
+"type": "array" , "contains": { "type": "number"
+,
+"type": "string" , "items": [
+"Phones" ,
+    {
+      "type": "number" ,
+      "items": [
+        ""
+      ]
+    }, {
+"type": "number",
+"Items":[ "Mobile" , "Home" , "Other" ],
+      },
+  {
+"type": "string" , "items": [ "Hobbies" ]
+} , {
+"type": "string" , "enum": [ ]
+}
+],
+"additionalItems": { "type": "string" } } }
+
+
+{
+"type": "array" , "items": [
+{ "type": "number" } , { "type": "string"
+} , { "type": "string" , "enum": [ "Street" , "City" , "State" , "zip-code" ]
+} , { "type": "string" , "enum": [ "Country" ]
+}
+]
+}
+
