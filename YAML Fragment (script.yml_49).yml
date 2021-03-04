@@ -1,0 +1,7 @@
+
+1. Book library. 1. Author 1. Name 2. Surname 2. Title`1 dfyu7f`6 3. Publisher 4. Price 5. year 2. Student Catalog:1. Name 2. Last name 3. Birth date 4. Address 1. Street 2. City 3. Zip 4. State 5. Country 5. Phones:1. Mobile 2. Home 3. Other = List 6. Hobby = List 7. Employed = Bool
+
+Convert YAML structure to JSON Convert JSON structure to YAML
+
+
+BookLibrary:Surname 2. price 3. year 2. From Student Catalog 1. Name 2. Mobile phone 3. Zip
