@@ -1,0 +1,24 @@
+Lesson 11 HW
+1.  Create a git repo and 3 branches
+			A) master
+			B) develop
+			C)FEATURE-0012
+2.Set up push protection on master and develop branches
+3. Require PR and review by 2
+4. Commit Yaml file and Create a PR to main branch
+5. Change the yaml file in browser to create conflict
+6. Resolve the conflict in local branch
+7. Create a Fork from https://github.com/PyGithub/PyGithub
+8. Create PR to Forked repo. (Do not create PR to origin repo)
+
+
+Optional:
+	Setup Git action to validate YAML files
+Set Tag v0.1 to a commit
+NOTE: For github action You can refer to https://github.com/shalobalo/devops11
+
+Links:
+https://github.com
+https://www.youtube.com/watch?v=aJnFGMclhU8
+https://www.youtube.com/watch?v=dBSHLb1B8sw
+
