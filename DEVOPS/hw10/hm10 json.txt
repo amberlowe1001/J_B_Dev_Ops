@@ -1,0 +1,53 @@
+
+CL //jq '.'
+
+
+
+
+
+
+
+
+
+
+{"Address":"1422" {"Street":"Main" {"City":"Anytown" {"State":"CA" {"Country":"USA" {"zip-code":"93304"}}}}}
+
+[{"name":"Book", "name":true}, {"name":"library", "good":true}]
+{"Author": 1, "Name": 2, "Surname": 3}
+{ "title": { "year": { "publisher": { "Price": 123 } } } }
+
+{"Name": 1, "Last Name": 2, "Birth date": 3, "address":}
+
+{ "title": { "year": { "publisher": { "Price": 123 } } } }
+
+ ['{"name":"student", "good":true}, {"name":"catalog", "good":true}']
+{ "title": { "year": { "publisher": { "Price": 123 } } } }
+
+{ "Address": 1422 { "Street": Main St.{ "City": Anytown { "State": CA { "Country": USA {"zip code": 93304 } } } }
+{ "Mobile": { "Home": { "other": 123 } } }
+
+[{"Hobbies":"Basketball", "good":true}, {"name":"Baseball", "good":false}]
+[{"Hobbies": "Baseball", "good": false},{"Hobbies":"Basketball", "good":false}]
+{ "Reading": 4, "JSON":2, "Basketball":1}
+___________________________________________________________________________________
+
+
+{"name":"Book", "good":true}, {"name":"library" ,"good":true}
+
+{"Author": 1, "Name": 2, "Surname": 3}
+{"title":"Hey", "Year":"2021", "Publisher":"Hey", "Price": "123"}]
+{"Name":"Robert", {"Last Name": "Cowell", {"Birth date":"10/01/2009"}
+
+{"title":"Author", "year":"2020", "publisher": "", "Price": 123 }
+
+{"name":"student", "good":true}, {"name":"catalog", "good":true}]
+{ "title": { "year": { "publisher": { "Price": 123 } } } }
+
+[{"Address": "1422" {"Street":"Main St"{ "City": "Anytown", { "State": "CA" ,{"Country": "USA" } } } }
+{ "Mobile": { "Home": { "other": 123 } } }
+
+[{"Hobbies":"Basketball", "good":true}, {"name":"Baseball", "good":false}]
+[{"Hobbies": "Baseball", "good": false},{"Hobbies":"Basketball", "good":false}]
+{"Reading": 4, "JSON":2, "Basketball":1}
+
+{"Reading": 4, "JSON":2, "Basketball":1}
