@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<log>
+  <start time="2021-03-28 23:13:35.258211 -0700" appName="BvSshServer-DevOps" appVersion="8.45" thisFile="C:\Program Files\Bitvise SSH Server - DevOps\Logs\BvSshServer-DevOps20210328-231335235-M0700.log"/>
+
+  <event seq="1" time="2021-03-28 23:13:35.234055 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_CONFIG_DESCRIPTION" desc="Configuration description.">
+    <parameters configPart="ServerSettings"/>
+    <change time="2021-03-28 23:13:32.004238 -0700" action="Settings edited via local Easy Settings interface by 'DESKTOP-TV565H4\ALEGT'." process="BssCtrl.exe"/>
+    <change time="2021-03-28 23:12:46.396087 -0700" action="Settings edited via local Easy Settings interface by 'DESKTOP-TV565H4\ALEGT'." process="BssCtrl.exe"/>
+    <change time="2021-03-28 23:12:17.393567 -0700" action="Settings edited via local Easy Settings interface by 'DESKTOP-TV565H4\ALEGT'." process="BssCtrl.exe"/>
+    <change time="2021-03-28 23:01:17.073400 -0700" action="Default settings created during server installation." process="BvSshServer.exe"/>
+    <settings fullSettingsLogReason="Startup">
+      <powerShell><![CDATA[
+        $cfg = new-object -com "BssCfg815.BssCfg815"
+        
+        $cfg.settings.SetDefaults()
+        $cfg.settings.server.SetDefaults()
+        $cfg.settings.server.bindings.SetDefaults()
+        $cfg.settings.server.bindings.ipv4.Clear()
+        $cfg.settings.server.bindings.ipv4.new.SetDefaults()
+        $cfg.settings.server.bindings.ipv4.new.serviceType = 1 # $cfg.enums.ServiceType.ftp
+        $cfg.settings.server.bindings.ipv4.new.port = 21
+        $cfg.settings.server.bindings.ipv4.new.natForward = $true
+        $cfg.settings.server.bindings.ipv4.NewCommit()
+        $cfg.settings.server.bindings.ipv4.new.SetDefaults()
+        $cfg.settings.server.bindings.ipv4.new.natForward = $true
+        $cfg.settings.server.bindings.ipv4.NewCommit()
+        $cfg.settings.server.bindings.ipv6.Clear()
+        $cfg.settings.server.bindings.ipv6.new.SetDefaults()
+        $cfg.settings.server.bindings.ipv6.new.serviceType = 1 # $cfg.enums.ServiceType.ftp
+        $cfg.settings.server.bindings.ipv6.new.port = 21
+        $cfg.settings.server.bindings.ipv6.new.natForward = $true
+        $cfg.settings.server.bindings.ipv6.NewCommit()
+        $cfg.settings.server.bindings.ipv6.new.SetDefaults()
+        $cfg.settings.server.bindings.ipv6.new.natForward = $true
+        $cfg.settings.server.bindings.ipv6.NewCommit()
+        $cfg.settings.server.windowsFirewall.SetDefaults()
+        $cfg.settings.server.windowsFirewall.sshPortsFirewallSetting = 3 # $cfg.enums.WindowsFirewallSetting.globalScope
+        $cfg.settings.server.windowsFirewall.forwardedPortsFirewallSetting = 3 # $cfg.enums.WindowsFirewallSetting.globalScope
+        $cfg.settings.server.windowsFirewall.ftpPortsFirewallSetting = 3 # $cfg.enums.WindowsFirewallSetting.globalScope
+        $cfg.settings.server.logging.SetDefaults()
+        $cfg.settings.server.logging.logFileLevel = 3 # $cfg.enums.LogLevel_EWIT.logLevelEWIT
+        $cfg.settings.access.SetDefaults()
+        $cfg.settings.access.winGroups.Clear()
+        $cfg.settings.access.winGroups.new.SetDefaults()
+        $cfg.settings.access.winGroups.new.loginAllowed = $true
+        $cfg.settings.access.winGroups.NewCommit()
+        $cfg.settings.access.winAccounts.Clear()
+        $cfg.settings.access.winAccounts.new.SetDefaults()
+        $cfg.settings.access.winAccounts.new.winAccount = "ALEGT"
+        $cfg.settings.access.winAccounts.new.specifyGroup = $true
+        $cfg.settings.access.winAccounts.new.loginAllowed = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.new.term.SetDefaults()
+        $cfg.settings.access.winAccounts.new.term.shellAccessType = 3 # $cfg.enums.ShellAccessWD.cmdPrompt
+        $cfg.settings.access.winAccounts.new.xfer.SetDefaults()
+        $cfg.settings.access.winAccounts.new.xfer.permitScp = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.new.xfer.permitSftp = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.new.xfer.permitFtps = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.new.xfer.inheritMountPoints = $false
+        $cfg.settings.access.winAccounts.new.xfer.mountPoints.Clear()
+        $cfg.settings.access.winAccounts.new.xfer.mountPoints.NewCommit()
+        $cfg.settings.access.winAccounts.new.xfer.useDefaultSfsHomeDir = $false
+        $cfg.settings.access.winAccounts.new.fwding.SetDefaults()
+        $cfg.settings.access.winAccounts.new.fwding.permitC2S = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.new.fwding.permitS2C = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.NewCommit()
+        $cfg.settings.access.winAccounts.new.SetDefaults()
+        $cfg.settings.access.winAccounts.new.winAccountType = 3 # $cfg.enums.WinAccountType.microsoftAccount
+        $cfg.settings.access.winAccounts.new.winAccount = "Administrators"
+        $cfg.settings.access.winAccounts.new.specifyGroup = $true
+        $cfg.settings.access.winAccounts.new.loginAllowed = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.new.term.SetDefaults()
+        $cfg.settings.access.winAccounts.new.term.shellAccessType = 3 # $cfg.enums.ShellAccessWD.cmdPrompt
+        $cfg.settings.access.winAccounts.new.xfer.SetDefaults()
+        $cfg.settings.access.winAccounts.new.xfer.permitScp = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.new.xfer.permitSftp = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.new.xfer.permitFtps = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.new.xfer.inheritMountPoints = $false
+        $cfg.settings.access.winAccounts.new.xfer.mountPoints.Clear()
+        $cfg.settings.access.winAccounts.new.xfer.mountPoints.NewCommit()
+        $cfg.settings.access.winAccounts.new.xfer.useDefaultSfsHomeDir = $false
+        $cfg.settings.access.winAccounts.new.fwding.SetDefaults()
+        $cfg.settings.access.winAccounts.new.fwding.permitC2S = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.new.fwding.permitS2C = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.winAccounts.NewCommit()
+        $cfg.settings.access.virtAccounts.Clear()
+        $cfg.settings.access.virtAccounts.new.SetDefaults()
+        $cfg.settings.access.virtAccounts.new.virtAccount = "DevOps"
+        $cfg.settings.access.virtAccounts.new.virtPassword.crypt = "0A5E00E25CEE5B74C76CD3E7916B7A12EC8143F177FA6311E318D71C8F7F6AD51B2EC3A4313B2B32"
+        $cfg.settings.access.virtAccounts.new.group = "Virtual Users"
+        $cfg.settings.access.virtAccounts.new.loginAllowed = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.virtAccounts.new.term.SetDefaults()
+        $cfg.settings.access.virtAccounts.new.term.shellAccessType = 10 # $cfg.enums.ShellAccessWD.bvshell
+        $cfg.settings.access.virtAccounts.new.xfer.SetDefaults()
+        $cfg.settings.access.virtAccounts.new.xfer.permitScp = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.virtAccounts.new.xfer.permitSftp = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.virtAccounts.new.xfer.permitFtps = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.virtAccounts.new.xfer.inheritMountPoints = $false
+        $cfg.settings.access.virtAccounts.new.xfer.mountPoints.Clear()
+        $cfg.settings.access.virtAccounts.new.xfer.mountPoints.new.SetDefaults()
+        $cfg.settings.access.virtAccounts.new.xfer.mountPoints.new.allowUnlimitedAccess = $true
+        $cfg.settings.access.virtAccounts.new.xfer.mountPoints.new.realRootPath = ""
+        $cfg.settings.access.virtAccounts.new.xfer.mountPoints.NewCommit()
+        $cfg.settings.access.virtAccounts.new.xfer.useDefaultSfsHomeDir = $false
+        $cfg.settings.access.virtAccounts.new.xfer.sfsHomeDir = "/%HOME%"
+        $cfg.settings.access.virtAccounts.new.fwding.SetDefaults()
+        $cfg.settings.access.virtAccounts.new.fwding.permitC2S = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.virtAccounts.new.fwding.permitS2C = 1 # $cfg.enums.DefaultYesNo.yes
+        $cfg.settings.access.virtAccounts.NewCommit()
+        
+        $cfg.settings.Save()
+      ]]></powerShell>
+    </settings>
+  </event>
+
+  <event seq="2" time="2021-03-28 23:13:35.258808 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_CONFIG_DESCRIPTION" desc="Configuration description.">
+    <parameters configPart="HostKeys" keypairCount="2"/>
+    <keypair algorithm="RSA" keyBits="3072" md5="f8:23:bc:55:fb:19:4d:78:12:8f:51:dd:ed:b6:6c:d6" babble="xulof-tigig-vusyn-tobom-kevoc-divaz-rapig-bugut-gutud-bubak-baxox" sha256="G8xqsZue5NvRAU1U+V5k6IA0s67Pws7+o++p8mrY5lM"/>
+    <keypair algorithm="ECDSA/nistp384" keyBits="384" md5="95:2b:94:fe:b1:59:c4:f6:47:24:92:88:74:80:6a:ef" babble="xogoz-porun-hesyr-bacyc-pipan-fetes-dytuv-nodon-leber-gusir-doxix" sha256="iQwF1eq+1YrmX++D8lnXSohMcE39iABkgo+HEmnTmpE"/>
+  </event>
+
+  <event seq="3" time="2021-03-28 23:13:35.258890 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_CONFIG_DESCRIPTION" desc="Configuration description.">
+    <parameters configPart="Certificates" certificateCount="1"/>
+    <certificate issuedTo="Bitvise SSH Server" issuedBy="Bitvise SSH Server" serial="23:50:63:2f:c9:a4:3c:bc:45:8f:e8:fb:48:6c:ca:50"/>
+  </event>
+
+  <event seq="4" time="2021-03-28 23:13:35.265145 -0700" app="BvSshServer-DevOps 8.45" name="T_STATS_FILE_NOT_FOUND" desc="Stats file not found.">
+    <parameters statsType="ServerTotal" account="ServerTotal" file="BssStats-nbst-ServerTotal-00.xml"/>
+  </event>
+
+  <event seq="5" time="2021-03-28 23:13:35.303714 -0700" app="BvSshServer-DevOps 8.45" name="T_SERVICE_TOTERM_INIT_SUCCEEDED" desc="Terminal server initialization succeeded.">
+    <parameters path="C:\Program Files\Bitvise SSH Server - DevOps"/>
+  </event>
+
+  <event seq="6" time="2021-03-28 23:13:35.304318 -0700" app="BvSshServer-DevOps 8.45" name="I_UPDATE_MANAGER_VERSION_STATUS" desc="SSH Server version status.">
+    <parameters versionStatus="Current"/>
+    <help message="This is the latest release."/>
+  </event>
+
+  <event seq="7" time="2021-03-28 23:13:35.434949 -0700" app="BvSshServer-DevOps 8.45" name="I_AUTO_ACCOUNT_CREATED" desc="Created an automatically managed local account for virtual users.">
+    <parameters account="BvSsh_DevOps"/>
+  </event>
+
+  <event seq="8" time="2021-03-28 23:13:35.531803 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_SOCKET_BOUND" desc="Listening socket bound.">
+    <parameters listenAddress="0.0.0.0:21" service="FTP" proxyProtocol="Disabled"/>
+  </event>
+
+  <event seq="9" time="2021-03-28 23:13:35.532039 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_SOCKET_BOUND" desc="Listening socket bound.">
+    <parameters listenAddress="0.0.0.0:22" service="SSH" proxyProtocol="Disabled"/>
+  </event>
+
+  <event seq="10" time="2021-03-28 23:13:35.532528 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_SOCKET_BOUND" desc="Listening socket bound.">
+    <parameters listenAddress="[::]:21" service="FTP" proxyProtocol="Disabled"/>
+  </event>
+
+  <event seq="11" time="2021-03-28 23:13:35.532710 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_SOCKET_BOUND" desc="Listening socket bound.">
+    <parameters listenAddress="[::]:22" service="SSH" proxyProtocol="Disabled"/>
+  </event>
+
+  <event seq="12" time="2021-03-28 23:13:35.532890 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_SOCKET_BOUND" desc="Listening socket bound.">
+    <parameters listenAddress="0.0.0.0:20020" service="FTP" serviceAddress="0.0.0.0:21"/>
+  </event>
+
+  <event seq="13" time="2021-03-28 23:13:35.533089 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_SOCKET_BOUND" desc="Listening socket bound.">
+    <parameters listenAddress="[::]:20020" service="FTP" serviceAddress="[::]:21"/>
+  </event>
+
+  <event seq="14" time="2021-03-28 23:13:35.610058 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_ADDED" desc="Windows Firewall exception added.">
+    <parameters port="21" scope="Global" type="TCP/IPv4"/>
+  </event>
+
+  <event seq="15" time="2021-03-28 23:13:35.671981 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_ADDED" desc="Windows Firewall exception added.">
+    <parameters port="22" scope="Global" type="TCP/IPv4"/>
+  </event>
+
+  <event seq="16" time="2021-03-28 23:13:35.720430 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_ADDED" desc="Windows Firewall exception added.">
+    <parameters port="21" scope="Global" type="TCP/IPv6"/>
+  </event>
+
+  <event seq="17" time="2021-03-28 23:13:35.769474 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_ADDED" desc="Windows Firewall exception added.">
+    <parameters port="22" scope="Global" type="TCP/IPv6"/>
+  </event>
+
+  <event seq="18" time="2021-03-28 23:13:35.815151 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_ADDED" desc="Windows Firewall exception added.">
+    <parameters port="20020" scope="Global" type="TCP/IPv4"/>
+  </event>
+
+  <event seq="19" time="2021-03-28 23:13:35.864242 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_ADDED" desc="Windows Firewall exception added.">
+    <parameters port="20020" scope="Global" type="TCP/IPv6"/>
+  </event>
+
+  <event seq="20" time="2021-03-28 23:13:35.865724 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_CONF_SYNC_SETTINGS_DESCRIPTION" desc="Description of synchronization settings.">
+    <settings>
+      <powerShell><![CDATA[
+        $cfg = new-object -com "BssCfg815.BssCfg815"
+        
+        $cfg.instance.SetDefaults()
+        
+        $cfg.instance.Save()
+      ]]></powerShell>
+    </settings>
+  </event>
+
+  <event seq="21" time="2021-03-28 23:13:35.865846 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_CONF_SYNC_SETTINGS_APPLIED" desc="Synchronization settings successfully applied."/>
+
+  <event seq="22" time="2021-03-28 23:13:35.869959 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_STARTED" desc="Service started.">
+    <parameters serviceAccount="NT AUTHORITY\SYSTEM" sessionId="0" processId="3200" exePath="C:\Program Files\Bitvise SSH Server - DevOps\BvSshServer.exe" cryptoProvider="Windows CNG (x64) with additions" bootTime="2021-03-28 18:26:20 -0700" computerName="DESKTOP-TV565H4" computerSid="S-1-5-21-128155268-2448125361-411285990" windowsVersion="10.0.21343 (64-bit)" servicePack="0" isDomainController="false" lsaProtection="0" lsaAuthPackages="msv1_0; SshdPinAuthLsa; BvLsaEx" bvLsaFileSize="359064" bvLsaLastInitTime="" bvLsaVersion="" bvAllocHook="true" bvAllocHeapCount="6"/>
+  </event>
+
+  <event seq="23" time="2021-03-28 23:13:35.911013 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_ADDED" desc="Windows Firewall exception added.">
+    <parameters port="UPnP" scope="Local"/>
+  </event>
+
+  <event seq="24" time="2021-03-28 23:13:45.095300 -0700" app="BvSshServer-DevOps 8.45" name="I_NAT_SYNC_FORWARDING_ADDED" desc="NAT port forwarding added via UPnP.">
+    <parameters fromPort="21" toHost="172.20.208.1" toPort="21"/>
+  </event>
+
+  <event seq="25" time="2021-03-28 23:13:45.135598 -0700" app="BvSshServer-DevOps 8.45" name="I_NAT_SYNC_FORWARDING_ADDED" desc="NAT port forwarding added via UPnP.">
+    <parameters fromPort="22" toHost="172.20.208.1" toPort="22"/>
+  </event>
+
+  <event seq="26" time="2021-03-28 23:13:46.733419 -0700" app="BvSshServer-DevOps 8.45" name="I_NAT_SYNC_FORWARDING_ADDED" desc="NAT port forwarding added via UPnP.">
+    <parameters fromPort="20020" toHost="172.20.208.1" toPort="20020"/>
+  </event>
+
+  <event seq="27" time="2021-03-28 23:19:10.473015 -0700" app="BvSshServer-DevOps 8.45" name="T_SERVICE_CONFIG_RELOAD_STARTED" desc="Started reloading configuration.">
+    <parameters configPart="ServerSettings"/>
+  </event>
+
+  <event seq="28" time="2021-03-28 23:19:11.049284 -0700" app="BvSshServer-DevOps 8.45" name="T_SERVICE_CONFIG_ALREADY_APPLIED" desc="An equivalent configuration is already applied.">
+    <parameters configPart="ServerSettings"/>
+    <help message="The SSH Server will continue to run using unchanged settings."/>
+  </event>
+
+  <event seq="29" time="2021-03-28 23:21:34.683941 -0700" app="BvSshServer-DevOps 8.45" name="T_SERVICE_CONFIG_RELOAD_STARTED" desc="Started reloading configuration.">
+    <parameters configPart="ServerSettings"/>
+  </event>
+
+  <event seq="30" time="2021-03-28 23:21:35.217209 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_CONFIG_DESCRIPTION" desc="Configuration description.">
+    <parameters configPart="ServerSettings"/>
+    <change time="2021-03-28 23:21:34.679000 -0700" action="Settings changed through BssCfgManip COM object by 'DESKTOP-TV565H4\ALEGT'." process="BssCfgManip.exe"/>
+    <settings fullSettingsLogReason="TooManyChanges">
+      <powerShell><![CDATA[
+        $cfg = new-object -com "BssCfg815.BssCfg815"
+        
+        $cfg.settings.SetDefaults()
+        $cfg.settings.server.SetDefaults()
+        $cfg.settings.server.bindings.SetDefaults()
+        $cfg.settings.server.bindings.ipv4.Clear()
+        $cfg.settings.server.bindings.ipv4.new.SetDefaults()
+        $cfg.settings.server.bindings.ipv4.new.serviceType = 1 # $cfg.enums.ServiceType.ftp
+        $cfg.settings.server.bindings.ipv4.new.port = 21
+        $cfg.settings.server.bindings.ipv4.new.natForward = $true
+        $cfg.settings.server.bindings.ipv4.NewCommit()
+        $cfg.settings.server.bindings.ipv4.new.SetDefaults()
+        $cfg.settings.server.bindings.ipv4.new.natForward = $true
+        $cfg.settings.server.bindings.ipv4.NewCommit()
+        $cfg.settings.server.bindings.ipv6.Clear()
+        $cfg.settings.server.bindings.ipv6.new.SetDefaults()
+        $cfg.settings.server.bindings.ipv6.new.serviceType = 1 # $cfg.enums.ServiceType.ftp
+        $cfg.settings.server.bindings.ipv6.new.port = 21
+        $cfg.settings.server.bindings.ipv6.new.natForward = $true
+        $cfg.settings.server.bindings.ipv6.NewCommit()
+        $cfg.settings.server.bindings.ipv6.new.SetDefaults()
+        $cfg.settings.server.bindings.ipv6.new.natForward = $true
+        $cfg.settings.server.bindings.ipv6.NewCommit()
+        $cfg.settings.server.windowsFirewall.SetDefaults()
+        $cfg.settings.server.windowsFirewall.sshPortsFirewallSetting = 3 # $cfg.enums.WindowsFirewallSetting.globalScope
+        $cfg.settings.server.windowsFirewall.forwardedPortsFirewallSetting = 3 # $cfg.enums.WindowsFirewallSetting.globalScope
+        $cfg.settings.server.windowsFirewall.ftpPortsFirewallSetting = 3 # $cfg.enums.WindowsFirewallSetting.globalScope
+        $cfg.settings.server.logging.SetDefaults()
+        $cfg.settings.server.logging.logFileLevel = 3 # $cfg.enums.LogLevel_EWIT.logLevelEWIT
+        
+        $cfg.settings.Save()
+      ]]></powerShell>
+    </settings>
+  </event>
+
+  <event seq="31" time="2021-03-28 23:21:35.273048 -0700" app="BvSshServer-DevOps 8.45" name="I_AUTO_ACCOUNT_DISABLED" desc="Disabled the automatically managed local account for virtual users.">
+    <parameters account="DESKTOP-TV565H4\BvSsh_DevOps"/>
+  </event>
+
+  <event seq="32" time="2021-03-28 23:21:35.273441 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_CONFIG_RELOAD_SUCCESS" desc="Configuration reloaded successfully.">
+    <parameters configPart="ServerSettings"/>
+    <help message="Reloaded settings have been applied."/>
+  </event>
+
+  <event seq="33" time="2021-03-28 23:22:43.330545 -0700" app="BvSshServer-DevOps 8.45" name="T_SERVICE_CONFIG_RELOAD_STARTED" desc="Started reloading configuration.">
+    <parameters configPart="ServerSettings"/>
+  </event>
+
+  <event seq="34" time="2021-03-28 23:22:43.898849 -0700" app="BvSshServer-DevOps 8.45" name="T_SERVICE_CONFIG_ALREADY_APPLIED" desc="An equivalent configuration is already applied.">
+    <parameters configPart="ServerSettings"/>
+    <help message="The SSH Server will continue to run using unchanged settings."/>
+  </event>
+
+  <event seq="35" time="2021-03-28 23:23:31.200926 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_REMOVED" desc="Windows Firewall exception removed.">
+    <parameters port="20020"/>
+  </event>
+
+  <event seq="36" time="2021-03-28 23:23:31.336955 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_REMOVED" desc="Windows Firewall exception removed.">
+    <parameters port="20020"/>
+  </event>
+
+  <event seq="37" time="2021-03-28 23:23:31.469187 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_REMOVED" desc="Windows Firewall exception removed.">
+    <parameters port="22"/>
+  </event>
+
+  <event seq="38" time="2021-03-28 23:23:31.604164 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_REMOVED" desc="Windows Firewall exception removed.">
+    <parameters port="21"/>
+  </event>
+
+  <event seq="39" time="2021-03-28 23:23:31.747339 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_REMOVED" desc="Windows Firewall exception removed.">
+    <parameters port="22"/>
+  </event>
+
+  <event seq="40" time="2021-03-28 23:23:31.870709 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_REMOVED" desc="Windows Firewall exception removed.">
+    <parameters port="21"/>
+  </event>
+
+  <event seq="41" time="2021-03-28 23:23:32.111086 -0700" app="BvSshServer-DevOps 8.45" name="I_NAT_SYNC_FORWARDING_REMOVED" desc="NAT port forwarding removed via UPnP.">
+    <parameters fromPort="21" toPort="21"/>
+  </event>
+
+  <event seq="42" time="2021-03-28 23:23:32.157158 -0700" app="BvSshServer-DevOps 8.45" name="I_NAT_SYNC_FORWARDING_REMOVED" desc="NAT port forwarding removed via UPnP.">
+    <parameters fromPort="22" toPort="22"/>
+  </event>
+
+  <event seq="43" time="2021-03-28 23:23:32.400831 -0700" app="BvSshServer-DevOps 8.45" name="I_NAT_SYNC_FORWARDING_REMOVED" desc="NAT port forwarding removed via UPnP.">
+    <parameters fromPort="20020" toPort="20020"/>
+  </event>
+
+  <event seq="44" time="2021-03-28 23:23:32.603461 -0700" app="BvSshServer-DevOps 8.45" name="I_FIREWALL_EXCEPTION_REMOVED" desc="Windows Firewall exception removed.">
+    <parameters port="UPnP"/>
+  </event>
+
+  <event seq="45" time="2021-03-28 23:23:33.073460 -0700" app="BvSshServer-DevOps 8.45" name="I_SERVICE_STOPPED" desc="Service stopped.">
+    <parameters stopReason="SystemShutdown"/>
+  </event>
+
+  <end time="2021-03-28 23:23:33.079915 -0700" reason="Shutdown"/>
+</log>
