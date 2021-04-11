@@ -1,0 +1,31 @@
+Lesson 21 HW
+Spin up 2 instances
+Joomla DB
+Joomla web
+Setup proper FW on GCP
+Setup services accordingly, using https://www.rosehosting.com/blog/how-to-install-joomla-3-on-centos-7/
+NOTE: disable SELinux on WEB server using: `setenforce 0`
+NOTE: There is 1 wrong instruction what you have to fix, and 1 extra step required to do to have web server work, otherwise you’ll get a default nginx page
+Create a free account at https://newrelic.com
+Setup infrastructure agents on both instances
+Setup mysql plugin on joomla-db
+Setup php plugin on joomla-web
+Check metrics and APM in NewRelic
+Setup Synthetic checks in NewRelic
+
+https://docs.newrelic.com/docs/agents/php-agent/installation/php-agent-installation-aws-linux-redhat-centos/
+
+
+ab -n 5000 -c 10 http://<ip_addr>
+/var/log/newrelic/
+
+
+Additional:
+Setup infrastructure, FW and other required components with terraform
+Setup DB without Public (external IP), will require NAT… e.t.c.
+Create roles and provision both web and DB services with Ansilbe
+
+Create a cluster at elastic.co, populate with demo data, and check available dashboards.
+
+Zabbix Demo: https://www.zabbix.com/demo
+
