@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-Deployment
+  labels:
+    app: nginx
+    role: leader
+    tier: backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+        role: leader
+        tier: backend
+    spec:
+      containers:
+      - name: nginx
+        image: "docker.io/nginx:6.0.5"
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort:80
