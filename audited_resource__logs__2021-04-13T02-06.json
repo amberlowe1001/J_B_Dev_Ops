@@ -1,0 +1,924 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2603:9008:1180:3b:a8ca:2f5c:cfde:2f91",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2021-04-13T09:06:14.814583Z",
+          "reason": "8uSywAYQGg5Db2xpc2V1bSBGbG93cw",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/935639923800/services/websecurityscanner.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/935639923800/services/websecurityscanner.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "services/websecurityscanner.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/devops3-new/services/websecurityscanner.googleapis.com",
+      "request": {
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest",
+        "name": "projects/devops3-new/services/websecurityscanner.googleapis.com"
+      }
+    },
+    "insertId": "l3e6t1ck2m",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "service": "serviceusage.googleapis.com",
+        "project_id": "devops3-new"
+      }
+    },
+    "timestamp": "2021-04-13T09:06:14.343016Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acf.p2-935639923800-eda30fbc-594c-46ae-a8f8-e9e3c0d20775",
+      "producer": "serviceusage.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2021-04-13T09:06:15.820130301Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2603:9008:1180:3b:a8ca:2f5c:cfde:2f91",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2021-04-13T09:06:14.874959Z",
+          "reason": "8uSywAYQGg5Db2xpc2V1bSBGbG93cw",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/935639923800",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ]
+    },
+    "insertId": "1t7ntohcp87",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "serviceusage.googleapis.com",
+        "project_id": "devops3-new",
+        "method": "google.longrunning.Operations.GetOperation"
+      }
+    },
+    "timestamp": "2021-04-13T09:06:14.828355Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2021-04-13T09:06:15.701588797Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2603:9008:1180:3b:a8ca:2f5c:cfde:2f91",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36,gzip(gfe),gzip(gfe)"
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/935639923800/services/websecurityscanner.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true
+        },
+        {
+          "resource": "services/websecurityscanner.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true
+        }
+      ],
+      "resourceName": "projects/devops3-new/services/websecurityscanner.googleapis.com",
+      "request": {
+        "name": "projects/devops3-new/services/websecurityscanner.googleapis.com",
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest"
+      },
+      "response": {
+        "service": {
+          "name": "projects/935639923800/services/websecurityscanner.googleapis.com",
+          "config": {
+            "name": "websecurityscanner.googleapis.com",
+            "title": "Web Security Scanner API"
+          },
+          "state": "ENABLED",
+          "parent": "projects/935639923800"
+        },
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceResponse"
+      }
+    },
+    "insertId": "cru730cf7y",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "serviceusage.googleapis.com",
+        "project_id": "devops3-new",
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService"
+      }
+    },
+    "timestamp": "2021-04-13T09:06:16.744661194Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acf.p2-935639923800-eda30fbc-594c-46ae-a8f8-e9e3c0d20775",
+      "producer": "serviceusage.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2021-04-13T09:06:16.744661194Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2603:9008:1180:3b:a8ca:2f5c:cfde:2f91",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2021-04-13T09:06:18.074636Z",
+          "reason": "8uSywAYQGg5Db2xpc2V1bSBGbG93cw",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/935639923800",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ]
+    },
+    "insertId": "v2sl9fcm1b",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "serviceusage.googleapis.com",
+        "project_id": "devops3-new",
+        "method": "google.longrunning.Operations.GetOperation"
+      }
+    },
+    "timestamp": "2021-04-13T09:06:18.022202Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2021-04-13T09:06:18.280935569Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2002:a05:6628:1b4d:0:0:0:0",
+        "callerSuppliedUserAgent": "stubby_client",
+        "requestAttributes": {
+          "time": "2021-04-13T09:18:19.133338Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/935639923800/services/stackdriver.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "projectnumbers/935639923800/services/stackdriver.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        },
+        {
+          "resource": "services/stackdriver.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/935639923800/services/stackdriver.googleapis.com",
+      "request": {
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest",
+        "name": "projects/935639923800/services/stackdriver.googleapis.com"
+      }
+    },
+    "insertId": "afwj2cjqm",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "devops3-new",
+        "service": "serviceusage.googleapis.com",
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService"
+      }
+    },
+    "timestamp": "2021-04-13T09:18:18.574993Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acf.p2-935639923800-3e79dd21-0fbb-4300-ac3a-c951cabcc19a",
+      "producer": "serviceusage.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2021-04-13T09:18:20.082941149Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2002:a05:6628:1b4d:0:0:0:0",
+        "callerSuppliedUserAgent": "stubby_client",
+        "requestAttributes": {
+          "time": "2021-04-13T09:18:19.214974Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/935639923800",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ]
+    },
+    "insertId": "gnszpzcm99",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.longrunning.Operations.GetOperation",
+        "service": "serviceusage.googleapis.com",
+        "project_id": "devops3-new"
+      }
+    },
+    "timestamp": "2021-04-13T09:18:19.173941Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2021-04-13T09:18:19.857420760Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2002:a05:6628:1b4d:0:0:0:0",
+        "callerSuppliedUserAgent": "stubby_client",
+        "requestAttributes": {
+          "time": "2021-04-13T09:18:21.294316Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/935639923800",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ]
+    },
+    "insertId": "ezqy52ckyl",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "devops3-new",
+        "service": "serviceusage.googleapis.com",
+        "method": "google.longrunning.Operations.GetOperation"
+      }
+    },
+    "timestamp": "2021-04-13T09:18:21.252298Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2021-04-13T09:18:21.506592848Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2002:a05:6628:1b4d:0:0:0:0"
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/935639923800/services/stackdriver.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true
+        },
+        {
+          "resource": "services/stackdriver.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true
+        }
+      ],
+      "resourceName": "projects/935639923800/services/stackdriver.googleapis.com",
+      "request": {
+        "name": "projects/935639923800/services/stackdriver.googleapis.com",
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest"
+      },
+      "response": {
+        "service": {
+          "name": "projects/935639923800/services/stackdriver.googleapis.com",
+          "config": {
+            "name": "stackdriver.googleapis.com",
+            "title": "Stackdriver API"
+          },
+          "state": "ENABLED",
+          "parent": "projects/935639923800"
+        },
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceResponse"
+      }
+    },
+    "insertId": "yz0gddcc5a",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "devops3-new",
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2021-04-13T09:18:21.726034058Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acf.p2-935639923800-3e79dd21-0fbb-4300-ac3a-c951cabcc19a",
+      "producer": "serviceusage.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2021-04-13T09:18:21.726034058Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2603:9008:1180:3b:a8ca:2f5c:cfde:2f91",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2021-04-13T09:34:55.400402Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "monitoring.googleapis.com",
+      "methodName": "google.monitoring.dashboard.v1.DashboardsService.CreateDashboard",
+      "authorizationInfo": [
+        {
+          "resource": "projects/935639923800",
+          "permission": "monitoring.dashboards.create",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/devops3-new",
+      "request": {
+        "@type": "type.googleapis.com/google.monitoring.dashboard.v1.CreateDashboardRequest",
+        "parent": "projects/devops3-new",
+        "dashboard": {
+          "name": "projects/devops3-new/dashboards/homepage",
+          "gridLayout": {
+            "columns": "2",
+            "widgets": [
+              {
+                "xyChart": {
+                  "dataSets": [
+                    {
+                      "plotType": "LINE",
+                      "timeSeriesQuery": {
+                        "timeSeriesFilter": {
+                          "aggregation": {
+                            "perSeriesAligner": "ALIGN_MEAN",
+                            "crossSeriesReducer": "REDUCE_NONE"
+                          },
+                          "filter": "resource.type=\"gce_instance\" AND metric.type=\"compute.googleapis.com/instance/cpu/utilization\"",
+                          "secondaryAggregation": {
+                            "crossSeriesReducer": "REDUCE_NONE"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                "title": "VM Instance - CPU utilization"
+              },
+              {
+                "title": "VM Instance - Received bytes",
+                "xyChart": {
+                  "dataSets": [
+                    {
+                      "plotType": "STACKED_BAR",
+                      "timeSeriesQuery": {
+                        "timeSeriesFilter": {
+                          "aggregation": {
+                            "crossSeriesReducer": "REDUCE_NONE",
+                            "perSeriesAligner": "ALIGN_RATE"
+                          },
+                          "secondaryAggregation": {
+                            "crossSeriesReducer": "REDUCE_NONE"
+                          },
+                          "filter": "resource.type=\"gce_instance\" AND metric.type=\"compute.googleapis.com/instance/network/received_bytes_count\""
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "VM Instance - Sent bytes",
+                "xyChart": {
+                  "dataSets": [
+                    {
+                      "timeSeriesQuery": {
+                        "timeSeriesFilter": {
+                          "secondaryAggregation": {
+                            "crossSeriesReducer": "REDUCE_NONE"
+                          },
+                          "aggregation": {
+                            "perSeriesAligner": "ALIGN_RATE",
+                            "crossSeriesReducer": "REDUCE_NONE"
+                          },
+                          "filter": "resource.type=\"gce_instance\" AND metric.type=\"compute.googleapis.com/instance/network/sent_bytes_count\""
+                        }
+                      },
+                      "plotType": "STACKED_AREA"
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "VM Instance - Disk read bytes",
+                "xyChart": {
+                  "dataSets": [
+                    {
+                      "timeSeriesQuery": {
+                        "timeSeriesFilter": {
+                          "secondaryAggregation": {
+                            "crossSeriesReducer": "REDUCE_NONE"
+                          },
+                          "filter": "resource.type=\"gce_instance\" AND metric.type=\"compute.googleapis.com/instance/disk/read_bytes_count\"",
+                          "aggregation": {
+                            "crossSeriesReducer": "REDUCE_NONE",
+                            "perSeriesAligner": "ALIGN_RATE"
+                          }
+                        }
+                      },
+                      "plotType": "LINE"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "displayName": "homepage"
+        }
+      },
+      "response": {
+        "displayName": "homepage",
+        "name": "projects/935639923800/dashboards/homepage",
+        "gridLayout": {
+          "widgets": [
+            {
+              "xyChart": {
+                "dataSets": [
+                  {
+                    "timeSeriesQuery": {
+                      "timeSeriesFilter": {
+                        "filter": "resource.type=\"gce_instance\" AND metric.type=\"compute.googleapis.com/instance/cpu/utilization\"",
+                        "aggregation": {
+                          "perSeriesAligner": "ALIGN_MEAN"
+                        },
+                        "secondaryAggregation": {}
+                      }
+                    },
+                    "plotType": "LINE"
+                  }
+                ]
+              },
+              "title": "VM Instance - CPU utilization"
+            },
+            {
+              "xyChart": {
+                "dataSets": [
+                  {
+                    "timeSeriesQuery": {
+                      "timeSeriesFilter": {
+                        "aggregation": {
+                          "perSeriesAligner": "ALIGN_RATE"
+                        },
+                        "filter": "resource.type=\"gce_instance\" AND metric.type=\"compute.googleapis.com/instance/network/received_bytes_count\"",
+                        "secondaryAggregation": {}
+                      }
+                    },
+                    "plotType": "STACKED_BAR"
+                  }
+                ]
+              },
+              "title": "VM Instance - Received bytes"
+            },
+            {
+              "title": "VM Instance - Sent bytes",
+              "xyChart": {
+                "dataSets": [
+                  {
+                    "plotType": "STACKED_AREA",
+                    "timeSeriesQuery": {
+                      "timeSeriesFilter": {
+                        "filter": "resource.type=\"gce_instance\" AND metric.type=\"compute.googleapis.com/instance/network/sent_bytes_count\"",
+                        "aggregation": {
+                          "perSeriesAligner": "ALIGN_RATE"
+                        },
+                        "secondaryAggregation": {}
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "xyChart": {
+                "dataSets": [
+                  {
+                    "timeSeriesQuery": {
+                      "timeSeriesFilter": {
+                        "secondaryAggregation": {},
+                        "filter": "resource.type=\"gce_instance\" AND metric.type=\"compute.googleapis.com/instance/disk/read_bytes_count\"",
+                        "aggregation": {
+                          "perSeriesAligner": "ALIGN_RATE"
+                        }
+                      }
+                    },
+                    "plotType": "LINE"
+                  }
+                ]
+              },
+              "title": "VM Instance - Disk read bytes"
+            }
+          ],
+          "columns": "2"
+        },
+        "@type": "type.googleapis.com/google.monitoring.dashboard.v1.Dashboard"
+      }
+    },
+    "insertId": "op8f3ne18jjh",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.monitoring.dashboard.v1.DashboardsService.CreateDashboard",
+        "service": "monitoring.googleapis.com",
+        "project_id": "devops3-new"
+      }
+    },
+    "timestamp": "2021-04-13T09:34:55.199367Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2021-04-13T09:34:56.327443380Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2603:9008:1180:3b:a8ca:2f5c:cfde:2f91",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2021-04-13T09:37:19.659717425Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "monitoring.googleapis.com",
+      "methodName": "google.monitoring.v3.AlertPolicyService.CreateAlertPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "935639923800",
+          "permission": "monitoring.alertPolicies.create",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/devops3-new",
+      "request": {
+        "alertPolicy": {
+          "displayName": "VM p95 networking latency too high",
+          "conditions": [
+            {
+              "displayName": "VM p95 networking latency too high",
+              "conditionThreshold": {
+                "duration": "180s",
+                "thresholdValue": 20000,
+                "comparison": "COMPARISON_GT",
+                "aggregations": [
+                  {
+                    "groupByFields": [
+                      "resource.labels.instance_id",
+                      "resource.labels.project_id",
+                      "resource.labels.zone"
+                    ],
+                    "crossSeriesReducer": "REDUCE_PERCENTILE_95",
+                    "alignmentPeriod": "300s",
+                    "perSeriesAligner": "ALIGN_SUM"
+                  }
+                ],
+                "filter": "metric.type=\"networking.googleapis.com/vm_flow/rtt\" AND resource.type=\"gce_instance\""
+              }
+            }
+          ],
+          "enabled": true,
+          "combiner": "OR",
+          "userLabels": {
+            "version": "1",
+            "gce_monitoring": "p95_response_latency"
+          }
+        },
+        "@type": "type.googleapis.com/google.monitoring.v3.CreateAlertPolicyRequest",
+        "name": "projects/devops3-new"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.monitoring.v3.AlertPolicy",
+        "enabled": true,
+        "conditions": [
+          {
+            "conditionThreshold": {
+              "filter": "metric.type=\"networking.googleapis.com/vm_flow/rtt\" AND resource.type=\"gce_instance\"",
+              "aggregations": [
+                {
+                  "alignmentPeriod": "300s",
+                  "perSeriesAligner": "ALIGN_SUM",
+                  "crossSeriesReducer": "REDUCE_PERCENTILE_95",
+                  "groupByFields": [
+                    "resource.labels.instance_id",
+                    "resource.labels.project_id",
+                    "resource.labels.zone"
+                  ]
+                }
+              ],
+              "thresholdValue": 20000,
+              "comparison": "COMPARISON_GT",
+              "duration": "180s"
+            },
+            "name": "projects/devops3-new/alertPolicies/9264565864753346045/conditions/9264565864753345496",
+            "displayName": "VM p95 networking latency too high"
+          }
+        ],
+        "name": "projects/devops3-new/alertPolicies/9264565864753346045",
+        "displayName": "VM p95 networking latency too high",
+        "mutationRecord": {
+          "mutatedBy": "amberlowe.itpro@gmail.com"
+        },
+        "userLabels": {
+          "gce_monitoring": "p95_response_latency",
+          "version": "1"
+        },
+        "combiner": "OR",
+        "creationRecord": {
+          "mutatedBy": "amberlowe.itpro@gmail.com"
+        }
+      }
+    },
+    "insertId": "jph3d1e18sya",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "monitoring.googleapis.com",
+        "method": "google.monitoring.v3.AlertPolicyService.CreateAlertPolicy",
+        "project_id": "devops3-new"
+      }
+    },
+    "timestamp": "2021-04-13T09:37:19.655626191Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2021-04-13T09:37:19.898681732Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2603:9008:1180:3b:a8ca:2f5c:cfde:2f91",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2021-04-13T09:37:19.956507572Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "monitoring.googleapis.com",
+      "methodName": "google.monitoring.v3.AlertPolicyService.CreateAlertPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "935639923800",
+          "permission": "monitoring.alertPolicies.create",
+          "granted": true,
+          "resourceAttributes": {}
+        }
+      ],
+      "resourceName": "projects/devops3-new",
+      "request": {
+        "alertPolicy": {
+          "conditions": [
+            {
+              "conditionThreshold": {
+                "thresholdValue": 95,
+                "comparison": "COMPARISON_GT",
+                "aggregations": [
+                  {
+                    "alignmentPeriod": "300s",
+                    "crossSeriesReducer": "REDUCE_NONE",
+                    "perSeriesAligner": "ALIGN_MEAN"
+                  }
+                ],
+                "filter": "metric.type=\"agent.googleapis.com/disk/percent_used\" AND resource.type=\"gce_instance\" AND metric.labels.state=\"used\"",
+                "duration": "300s"
+              },
+              "displayName": "VM disk utilization too high"
+            }
+          ],
+          "combiner": "OR",
+          "displayName": "VM disk utilization too high",
+          "enabled": true,
+          "userLabels": {
+            "version": "1",
+            "gce_monitoring": "disk_utiization"
+          }
+        },
+        "name": "projects/devops3-new",
+        "@type": "type.googleapis.com/google.monitoring.v3.CreateAlertPolicyRequest"
+      },
+      "response": {
+        "combiner": "OR",
+        "@type": "type.googleapis.com/google.monitoring.v3.AlertPolicy",
+        "mutationRecord": {
+          "mutatedBy": "amberlowe.itpro@gmail.com"
+        },
+        "name": "projects/devops3-new/alertPolicies/9833100190998666193",
+        "userLabels": {
+          "version": "1",
+          "gce_monitoring": "disk_utiization"
+        },
+        "creationRecord": {
+          "mutatedBy": "amberlowe.itpro@gmail.com"
+        },
+        "conditions": [
+          {
+            "displayName": "VM disk utilization too high",
+            "name": "projects/devops3-new/alertPolicies/9833100190998666193/conditions/9833100190998664344",
+            "conditionThreshold": {
+              "comparison": "COMPARISON_GT",
+              "aggregations": [
+                {
+                  "perSeriesAligner": "ALIGN_MEAN",
+                  "alignmentPeriod": "300s"
+                }
+              ],
+              "duration": "300s",
+              "filter": "metric.type=\"agent.googleapis.com/disk/percent_used\" AND resource.type=\"gce_instance\" AND metric.labels.state=\"used\"",
+              "thresholdValue": 95
+            }
+          }
+        ],
+        "displayName": "VM disk utilization too high",
+        "enabled": true
+      }
+    },
+    "insertId": "ziuhjhe17kki",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "devops3-new",
+        "method": "google.monitoring.v3.AlertPolicyService.CreateAlertPolicy",
+        "service": "monitoring.googleapis.com"
+      }
+    },
+    "timestamp": "2021-04-13T09:37:19.951713429Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2021-04-13T09:37:21.080847805Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "amberlowe.itpro@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "2603:9008:1180:3b:a8ca:2f5c:cfde:2f91",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2021-04-13T09:41:42.346171450Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "logging.googleapis.com",
+      "methodName": "google.logging.v2.ConfigServiceV2.CreateBucket",
+      "authorizationInfo": [
+        {
+          "resource": "projects/devops3-new/locations/global/buckets/lesson-16",
+          "permission": "logging.buckets.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "logging.googleapis.com",
+            "name": "projects/devops3-new/locations/global/buckets/lesson-16"
+          }
+        }
+      ],
+      "resourceName": "projects/devops3-new/locations/global/buckets/lesson-16",
+      "request": {
+        "bucketId": "lesson-16",
+        "bucket": {
+          "name": "projects/devops3-new/locations/global/buckets/lesson-16",
+          "retentionDays": 30
+        },
+        "@type": "type.googleapis.com/google.logging.v2.CreateBucketRequest",
+        "parent": "projects/devops3-new/locations/global"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "1c089kccgio",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.logging.v2.ConfigServiceV2.CreateBucket",
+        "project_id": "devops3-new",
+        "service": "logging.googleapis.com"
+      }
+    },
+    "timestamp": "2021-04-13T09:41:42.333734790Z",
+    "severity": "NOTICE",
+    "logName": "projects/devops3-new/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2021-04-13T09:41:43.864721354Z"
+  }
+]
